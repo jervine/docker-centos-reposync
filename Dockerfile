@@ -2,7 +2,7 @@ FROM centos:latest
 MAINTAINER Jonathan Ervine <jon.ervine@gmail.com>
 
 RUN yum install -y epel-release
-RUN yum install -y yum-utils createrepo ansible httpd supervisor
+RUN yum install -y yum-utils createrepo ansible httpd supervisor sudo
 RUN yum update -y &&  yum clean all
 RUN rm -rf /var/cache/yum
 
