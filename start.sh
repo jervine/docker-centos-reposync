@@ -6,7 +6,7 @@
 ## Initialise any variables being called:
 # Set the correct timezone
 TZ=${TZ:-UTC}
-CONF_DIR=${CONF_DIR:-/config/confs/}
+CONF_DIR=${CONF_DIR:-/config/httpd-confs/}
 setup=/config/.setup
 
 if [ ! -f "${setup}" ]; then
