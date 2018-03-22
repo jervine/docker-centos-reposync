@@ -7,7 +7,7 @@ RUN yum update -y &&  yum clean all
 RUN rm -rf /var/cache/yum
 
 ADD supervisord.conf /etc/supervisord.conf
-ADD httpd.ini /etc/supervisord.d/httpd.conf
+ADD httpd.ini /etc/supervisord.d/httpd.ini
 ADD start.sh /sbin/start.sh
 RUN chmod 755 /sbin/start.sh
 
